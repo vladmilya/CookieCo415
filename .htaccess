@@ -1,0 +1,18 @@
+rewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^(home)/?$ / [R=301,L]
+
+RewriteRule ^menu/?$ menu.php [L]
+RewriteRule ^menu/([0-9])/?$ menu.php?cat=$1 [L]
+RewriteRule ^cart/?$ cart.php [L]
+RewriteRule ^cart/add/([0-9]+)/?$ cart.php?add=$1 [L]
+RewriteRule ^cart/delete/([0-9]+)/?$ cart.php?delete=$1 [L]
+RewriteRule ^cart/checkout/?$ cart.php?checkout=1 [L]
+RewriteRule ^register/?$ register.php [L]
+RewriteRule ^account/?$ account.php [L]
+RewriteRule ^login/?$ login.php [L]
+RewriteRule ^404/?$ 404.php [L]
+RewriteRule ^([^/\.]+)/?$ index.php?&d=$1 [L]
+

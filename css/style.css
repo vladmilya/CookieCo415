@@ -1,0 +1,944 @@
+@font-face {
+  font-family: 'BerlinSansFBDemi-Bold';
+  src: url('../fonst/BerlinSansFBDemi-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/BerlinSansFBDemi-Bold.woff') format('woff'), 
+  url('../fonts/BerlinSansFBDemi-Bold.ttf')  format('truetype'), 
+  url('../fonst/BerlinSansFBDemi-Bold.svg#BerlinSansFBDemi-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+:focus,
+a:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline:0;
+	outline-offset:0;
+}
+*{
+	-webkit-appearance: none;/* delete the default styles ios */
+}
+body{	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:#4a5662;
+	font-size:17px;
+	overflow-x:hidden;
+}
+a,
+a:hover,
+a:focus{
+	text-decoration:none;
+}
+a{
+	color:#ff9000;
+}
+a:hover{
+	color:#4a5662;
+}
+a:hover img{
+	opacity:.7;
+}
+h1{
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:48px;
+	line-height:normal;
+	margin-top:0;
+}
+h2{
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:48px;
+	line-height:normal;
+	margin-top:0;
+}
+@media (max-width: 767px) {
+	h1{
+		font-size:30px;
+	}
+	h2{
+		font-size:24px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* start home-fon-header
+---------------------------------------------------- */
+.home-fon-header{
+	background-position:bottom center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	position:relative;
+}
+@media (max-width: 767px){
+	.home-fon-header{
+		padding-bottom:57px;
+		padding-top:100px;
+	}
+}
+/* stop home-fon-header
+---------------------------------------------------- */
+
+/* start upper-band
+---------------------------------------------------- */
+.upper-band{
+	background-color:#4a5662;
+	color:#fff;
+	font-size:17px;
+	line-height:normal;
+	font-weight:normal;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.upper-band .fa{
+	color:#ff9000;
+}
+.upper-band a{
+	color:#fff;
+}
+.upper-band a:hover{
+	color:#ff9000;
+}
+
+@media (max-width: 767px) {	
+	.upper-band{
+		height:60px;
+		overflow:hidden;
+		padding-bottom:0;
+		padding-top:0;
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:3;
+	}
+	.upper-band .pull-left{
+		display:none;
+	}
+	.upper-band .pull-right{
+		text-align:right;
+		position:absolute;
+		right:15px;
+		margin-left:33px;
+		padding-top:9px;
+	}
+	.upper-band .pull-right span{
+		display:block;
+	}
+}
+/* stop upper-band
+---------------------------------------------------- */
+
+/* start navigation
+---------------------------------------------------- */
+@media (min-width: 767px) {
+    .fixed {
+        position:fixed;
+        top:0; 
+		left:0;
+        width:100%;
+		z-index:4;
+		background-color: rgba(130,176,41,1)!important;
+    }
+}
+.navigation{
+	background-color: rgba(130,176,41,1);
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.56);
+	-moz-box-shadow:    0px 2px 7px 0px rgba(50, 50, 50, 0.56);
+	box-shadow:         0px 2px 7px 0px rgba(50, 50, 50, 0.56);
+}
+.home-fon-header .navigation{
+	background-color: rgba(130,176,41,.6);
+}
+.navbar-default{
+    background-color:transparent;
+    border-color:none;
+}
+.navbar{
+	border:none;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+    margin-bottom:0;
+    min-height: 50px;
+}
+.navbar-nav {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+}
+.navbar-default .navbar-nav > li > a{
+	border-right:1px solid #fff;
+    color:#fff;
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:22px;
+}
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li > a:hover{
+	color:#ff9000;
+}
+.navbar-default .navbar-nav > li:last-child > a{
+	border-right:none;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li.active > a, 
+.navbar-default .navbar-nav > li.active > a:hover, 
+.navbar-default .navbar-nav > li.active > a:focus {
+    background-color:transparent;
+    color:#ff9000;
+}
+.navbar-default .navbar-nav > li.active > a{
+	cursor:default;
+}
+
+@media (min-width: 768px) {
+	.upper-band .navbar-toggle{
+		display:none;
+	}
+}
+@media (max-width: 767px) {
+	.upper-band .navbar-toggle{
+		float:left;
+		padding:0;
+		margin:0;
+		top:16px;
+	}
+	.upper-band .navbar-toggle .icon-bar {
+		border-radius: 0;
+		display: block;
+		height: 5px;
+		width: 30px;
+		background-color:#99d130;
+	}
+	.upper-band .navbar-toggle.collapsed .icon-bar{
+		background-color:#99d130;
+	}
+	.upper-band .navbar-toggle .icon-bar{
+		background-color:#ff9000;
+	}
+	.navbar-toggle .icon-bar + .icon-bar {
+		margin-top: 6px;
+	}
+
+	.navigation{
+		background-color: rgba(130, 176, 41, 1);
+		background-color:transparent;
+		-webkit-box-shadow: none;
+		-moz-box-shadow:    none;
+		box-shadow:         none;
+		position:fixed;
+		top:60px;
+		left:0;
+		width:100%;
+		z-index:3;
+	}
+	.home-fon-header .navigation {
+		background-color:transparent;
+	}
+	.navbar-default .navbar-collapse, 
+	.navbar-default .navbar-form{
+		border:none;
+	}
+	.navbar-collapse{
+		padding-left:0;
+		padding-right:0;
+	}
+	.navbar-nav{
+		display:block;
+		background-color: rgba(130, 176, 41, 1);
+	}
+	.navbar-default .navbar-nav > li > a {
+		border-right: none;
+		border-bottom:1px solid #fff;
+		padding-bottom:13px;
+	}
+	.navbar-default .navbar-nav > li:last-child > a {
+		border-bottom:none;
+	}
+}
+/* stop navigation
+---------------------------------------------------- */
+
+/* srart logo-home-page
+---------------------------------------------------- */
+.logo-home-page{
+	text-align:center;
+	padding:200px 0;
+}
+@media (max-width: 767px) {
+	.logo-home-page{
+		padding:40px 0;
+	}
+
+}
+@media (max-width: 460px) {
+	.logo-home-page h1{
+		margin:0 20px;
+	}
+	.logo-home-page h1 img{
+		width:100%;
+	}
+}
+/* srop logo-home-page
+---------------------------------------------------- */ 
+
+/* start cookie-herbal-mission
+---------------------------------------------------- */
+.cookie-herbal-mission{
+	padding-bottom:60px;
+	padding-top:50px;
+}
+.cookie-herbal-mission .container{
+	max-width:800px;
+}
+.cookie-herbal-mission h2{
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:48px;
+	margin:0 0 42px 0;
+	line-height:normal;
+	text-align:center;
+}
+.cookie-herbal-mission p{
+	font-size:17px;
+	margin-bottom:20px;
+	text-align:center;
+}
+@media (max-width: 767px) {
+	.cookie-herbal-mission{
+		padding-bottom:15px;
+		padding-top:30px;
+	}
+	.cookie-herbal-mission h2{
+		font-size:24px;
+		margin:0 0 25px 0;
+	}
+	.cookie-herbal-mission p{
+		text-align:left;
+	}
+}
+/* stop cookie-herbal-mission
+---------------------------------------------------- */
+
+/* start logo-block-1
+---------------------------------------------------- */
+.logo-block-1{
+	background-position:top center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	position:relative;
+	text-align:center;
+	padding-bottom:200px;
+	padding-top:340px;
+}
+	.logo-block-1 a img{
+		max-width:190px;
+	}
+@media (min-width: 960px){
+	.block-5logo{
+		background:url(../images/bg-6g.png) no-repeat 0 0;
+		width:871px;
+		height:558px;
+		margin:0 auto;
+		padding-top:47px;
+	}
+	table.logo-3{
+		width:870px;
+		height:218px;
+	}
+	table.logo-3 td{
+		width:290px;
+		vertical-align:middle;
+		text-align:center;
+		height:218px;
+	}
+	table.logo-2{
+		width:582px;
+		height:257px;
+	}
+	table.logo-2 td{
+		width:291px;
+		vertical-align:middle;
+		text-align:center;
+		height:218px;
+	}
+	.logo-block-1 a{
+		display:block;
+	}
+	.logo-td3{
+		position:relative;
+		left:-12px;
+	}
+	.logo-td4{
+		position:relative;
+		left:-5px;
+	}
+	.logo-td5{
+		position:relative;
+		left:-3px;
+	}
+}
+@media (min-width: 768px) and (max-width: 870px) {
+}
+@media (max-width: 959px) {
+	.logo-block-1{
+		background-image:none!important;
+		background-color:#e4f2ff;
+		padding-bottom:0px;
+		padding-top:40px;
+		padding-left:0;
+		padding-right:0;
+	}
+	.logo-block-1 table{
+		width:293px;
+	}
+	.logo-block-1 table td{
+		background:url(../images/bg-1g.png) no-repeat 0 0;
+		display:block;
+		width:293px;
+		height:320px;
+		margin-bottom:40px;
+	}
+	.logo-block-1 table td a{
+		display:table;
+		width:293px;
+		height:320px;
+	}
+	.logo-block-1 table td a span{
+		display:table-cell;
+		width:293px;
+		height:320px;
+		text-align:center;
+		vertical-align:middle;
+	}
+}
+/* stop logo-block-1
+---------------------------------------------------- */
+
+/* start logo-block-2
+---------------------------------------------------- */
+.logo-block-2{
+	padding-bottom:80px;
+	padding-top:80px;
+}
+.table-logoblock2 img{
+	width:100%;
+}
+.table-logoblock2{
+	width:100%;
+	display:table;
+}
+.td-logoblock2{
+	width:25%;
+	display:table-cell;
+	padding:0 15px;
+	vertical-align:middle;
+	text-align:center;
+}
+@media (max-width: 767px) {
+	.logo-block-2{
+		padding-bottom:30px;
+		padding-top:30px;
+	}
+	.table-logoblock2 img{
+		max-width:100%;
+		width:auto;
+	}
+	.table-logoblock2{
+		width:100%;
+		display:block;
+	}
+	.td-logoblock2{
+		width:100%;
+		display:block;
+		padding:0;
+	}
+}
+/* stop logo-block-2
+---------------------------------------------------- */
+
+/* start CookieCo offers FREE DELIVERY in the San Francisco Bay Area.
+---------------------------------------------------- */
+.cookieco-offers{
+	background-color:#e4f2ff;
+	border-top:1px solid #ccc;
+	text-align:center;
+	padding-bottom:80px;
+	padding-top:50px;
+}
+.cookieco-offers .container{
+	max-width:800px;
+}
+.delivery-block h1{
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:48px;
+	margin:0 0 25px 0;
+	line-height:normal;
+	text-transform:uppercase;
+}
+.cookieco-offers h2{
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:48px;
+	margin:0 0 55px 0;
+	line-height:normal;
+}
+.delivery-block h2{
+	font-size:32px;
+}
+.cookieco-offers table{
+	background-color:#fff;
+	font-size:18px;
+	width:100%;
+	border:20px solid #fff;
+}
+.cookieco-offers table tr th{
+	padding:10px 20px 10px 20px;
+	text-align:center;
+}
+.cookieco-offers table tr th:first-child{
+	text-align:left;
+	border-right:1px solid #4b5763;
+	padding-left:0;
+}
+.cookieco-offers table tr td{
+	padding:5px 20px;
+	text-align:center;
+	border-top:1px solid #4b5763;
+	width:64%;
+}
+.cookieco-offers table tr td:first-child{
+	text-align:left;
+	border-right:1px solid #4b5763;
+	padding-left:0;
+}
+
+@media (max-width: 767px) {
+	.cookieco-offers{
+		padding-bottom:0;
+		padding-top:25px;
+	}
+	.delivery-block{
+		padding-top:90px;
+	}
+	.delivery-block h1{
+		font-size:30px;
+		margin:0 0 15px 0;
+	}
+	.cookieco-offers h2{
+		font-size:24px;
+		margin:0 0 30px 0;
+	}
+	.cookieco-offers table{
+		margin-bottom:40px;
+		max-width:440px;
+	}
+	.cookieco-offers .col-xs-12{
+		padding-left:0;
+		padding-right:0;
+	}
+}
+/* stop CookieCo offers FREE DELIVERY in the San Francisco Bay Area.
+---------------------------------------------------- */
+
+
+.product-unit{
+	background-color:#e4f2ff;
+	padding-bottom:60px;
+	padding-top:50px;
+}
+/* stop menu-block
+---------------------------------------------------- */
+.menu-block{
+	width:100%;
+	float:left;
+	margin:0 auto;
+	margin-bottom:42px;
+	text-align:center;
+}
+.menu-block a{
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:32px;
+	line-height:normal;
+	color:#4a5662;
+	display:inline-block;
+	border-right: 2px solid #4a5662;
+	padding:0 10px 0 5px;
+}
+.menu-block a:last-child{
+	border-right: none;
+	padding:0 0 0 5px;
+}
+.menu-block a.active,
+.menu-block a:hover{
+	color:#ff9000;
+}
+.menu-block a.active{
+	cursor:default;
+}
+@media (max-width: 767px) {
+	.menu-block{
+		margin-bottom:25px;
+	}
+	.menu-block a{
+		font-size:24px;
+	}
+}
+/* stop menu-block
+---------------------------------------------------- */
+
+/* start productunit-block
+----------------------------------------------------- */
+.productunit-block{
+	background-color:#fff;
+	border:1px solid #ccc;
+	padding:10px;
+	margin-bottom:30px;
+}
+.productunit-body{
+	height:210px;
+	width:100%;
+	position:relative;
+	background-position:center center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.productunit-body .text-1{
+	position:absolute;
+	top:8px;
+	left:8px;
+	color:#fff;
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:24px;
+	line-height:normal;
+	z-index:2;
+}
+.productunit-body .text-23{
+	position:absolute;
+	bottom:0;
+	left:8px;
+	z-index:2;
+	color:#fff;
+	font-size:13px;
+	font-weight:900;
+	line-height:normal;
+	text-transform:uppercase;
+	margin-right:60px;
+}
+.productunit-body .text-2,
+.productunit-body .text-3{
+	display:inline-block;
+	padding:4px 10px;
+	margin-bottom:8px;
+}
+
+.productunit-body .text-2{
+	background-color: rgba(255,144,0,.7);
+}
+.productunit-body .text-3{
+	background-color: rgba(166,201,99,.8);
+}
+.productunit-body .cart{
+	background-color: rgba(189,221,255,.7);
+	position:absolute;
+	bottom:8px;
+	right:8px;
+	z-index:2;
+	padding:3px 9px 3px 6px;
+	text-decoration:none;
+}
+.productunit-body .cart .fa{
+	color:#bb0ffb;
+	font-size:24px;
+}
+.productunit-body .cart:hover{
+	background-color: rgba(189,221,255,1);
+}
+@media (min-width: 500px) and (max-width: 767px) {
+	.product-unit{
+		padding-bottom:10px;
+		padding-top: 100px;
+	}
+	.productunit-block{
+		height:230px;
+		width:300px;
+		margin:0 auto;
+		margin-bottom:30px;
+	}
+}
+@media (max-width: 600px) {
+	.product-unit {
+		padding-bottom: 5px;
+		padding-top: 90px;
+	}
+	.menu-block a{
+		display:block;
+		border-right:none;
+		padding:5px 10px;
+	}
+}
+/* start productunit-block
+----------------------------------------------------- */
+
+/* start footer
+---------------------------------------------------- */
+.footer{
+	background-color:#4a5662;
+	padding-bottom:50px;
+	padding-top:50px;
+}
+.footer .boder-left{
+	border-left:1px solid #21272d;
+	min-height:170px;
+}
+.navigation-footer a{
+	color:#fff;
+	display:block;
+	font-size:17px;
+	line-height:26px;
+	font-weight:normal;
+}
+.navigation-footer a:hover{
+	color:#ff9000;
+}
+.contact-footer{
+	padding:0 5px 0 10px;
+}
+.contact-footer,
+.contact-footer a{
+	color:#fff;
+	font-size:17px;
+	line-height:normal;
+}
+.contact-footer a:hover,
+.contact-footer .fa{
+	color:#ff9000;
+}
+.contact-footer .clearfix{
+	margin-bottom:10px;
+}
+.social-footer a{
+	display:inline-block;
+	width:50%;
+	float:left;
+	text-align:center;
+	margin-bottom:35px;
+}
+.social-footer a .fa{
+	color:#222;
+	font-size:50px;
+}
+.social-footer a:hover .fa{
+	color:#ff9000;
+}
+.logo-footer{
+	margin-left:20px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.contact-footer .fa-envelope-o{
+		display:none;
+	}
+}
+@media (min-width: 992px) and (max-width: 1040px) {	
+	.logo-footer a{
+		display:block;
+		margin-top:35px;
+	}
+	.logo-footer img{
+		width:160px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.logo-footer a{
+		display:block;
+		margin-top:45px;
+	}
+	.logo-footer img{
+		width:110px;
+	}
+}
+@media (max-width: 767px) {
+	.footer{
+		padding-bottom:50px;
+		padding-top:30px;
+	}
+	.footer .col-xs-12{
+		padding-left:0;
+		padding-right:0;
+	}
+	.navigation-footer{
+		margin:0 0 25px 0;
+		text-align:center;
+	}
+	.navigation-footer a{
+		padding:4px 0;
+	}
+	.footer .boder-left{
+		border-left:none;
+		min-height:auto;
+	}
+	.contact-footer {
+		padding: 0;
+		text-align:center;
+		margin-bottom:45px;
+	}
+	.social-footer{
+		width:300px;
+		margin:0 auto;
+	}
+	.social-footer a {
+		margin-bottom:45px;
+	}
+	.logo-footer{
+		text-align:center;
+	}
+	.footer .row .col-xs-12:last-child{
+		margin-bottom:0;
+	}
+	.logo-footer{
+		margin-left:0;
+	}
+}
+/* stop footer
+---------------------------------------------------- */
+
+/* start contact-us
+---------------------------------------------------- */
+.contact-us{
+	background-color: #e4f2ff;
+	padding-bottom:80px;
+	padding-top:50px;
+}
+.contact-us h1{
+	text-align:center;
+	text-transform:uppercase;
+	margin-bottom:30px;
+}
+.contact-us .contact-footer{
+	text-align:center;
+	margin-bottom:40px;
+}
+.contact-us .contact-footer,
+.contact-us .contact-footer a{
+	color:#4a5662;
+}
+.map-1,
+.map-1-content{
+	margin:0 auto;
+	text-align:center;
+}
+.map-1-content{
+	max-width:465px;
+	margin-bottom:5px;
+}
+.map-1-content img{
+	width:100%;
+}
+.map-1 a{
+	color:#ff9000;
+}
+.map-1 a:hover{
+	color:#4a5662;
+}
+@media (max-width: 767px) {
+	.contact-us{
+		padding-bottom:35px;
+		padding-top:90px;
+	}
+}
+/* stop contact-us
+---------------------------------------------------- */
+.google-map{
+	border-top:1px solid #4b5763;
+	width:100%;
+	float:left;
+	margin-top:20px;
+}
+.google-map img{
+	width:100%;
+}
+@media (max-width: 767px) {
+	.google-map{
+		margin-top:0;
+	}
+}
+/* start register
+----------------------------------------------------- */
+.register{
+	background-color: #e4f2ff;
+	padding-bottom:80px;
+	padding-top:50px;
+}
+.register h1{
+	text-align:center;
+	text-transform:uppercase;
+	margin-bottom:30px;
+}
+.form-register{
+	max-width:600px;
+	margin:0 auto;
+}
+.form-register .form-control {
+    background-color: #fff;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+    border: 1px solid #4a5662;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none; 
+	box-shadow:none;
+    color: #000;
+    font-size:17px;
+    height: 40px;
+}
+.button-f1{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	border:1px solid #4a5662;
+	padding:6px 18px;
+	background-color:#ff9000;
+	color:#4a5662;
+	font-family: 'BerlinSansFBDemi-Bold';
+	font-size:24px;
+	line-height:normal;
+	cursor:pointer;
+	margin-right:10px;
+	min-width:111px;
+	margin-top:10px;
+}
+.button-f1:hover{
+	background-color:#82b029;
+	color:#fff;
+	cursor:pointer;
+}
+@media (max-width: 767px) {
+	.register{
+		padding-bottom:35px;
+		padding-top:90px;
+	}
+}
+/* stop register
+----------------------------------------------------- */
+
+
+
+
+
+
